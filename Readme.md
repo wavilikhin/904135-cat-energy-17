@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Влад Вавилихин](https://up.htmlacademy.ru/adaptive/17/user/904135).
-* Наставник: [Сергей Рубец] (https://htmlacademy.ru/profile/amator).
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
 
