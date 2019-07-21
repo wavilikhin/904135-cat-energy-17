@@ -12,7 +12,7 @@
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "10.1.x",
+    "stylelint": "^10.1.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -32,10 +32,12 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "ret": "^0.3.1"
   }
 }
