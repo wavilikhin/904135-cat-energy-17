@@ -1,4 +1,12 @@
-@import './fonts.scss';
-@import './variables.scss';
-
-@import './blocks/page-main__advert.scss';
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/advert-container.scss";
+@import "./blocks/programm-selection.scss";
+@import "./blocks/programm.scss";
+@import "./blocks/programm--slim.scss";
+@import "./blocks/programm--mass.scss";
+@import "./blocks/product-description.scss";
+@import "./blocks/footer.scss"

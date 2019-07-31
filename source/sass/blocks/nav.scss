@@ -1,0 +1,34 @@
+.page-header__nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list__item {
+  width: 320px;
+  height: 65px;
+  border-top: 0.2px solid $white-two;
+}
+
+.nav-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list__text {
+  width: 100%;
+  height: 17px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #111111;
+}

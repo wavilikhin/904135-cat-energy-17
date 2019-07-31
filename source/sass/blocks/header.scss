@@ -1,0 +1,25 @@
+.page-header {
+  width: 320px;
+  height: 65px;
+  background-color: $white;
+}
+
+.page-header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 39px;
+  margin-top: 11px;
+  object-fit: contain;
+}
+
+.page-header__menu {
+  width: 25px;
+  height: 19px;
+  margin-top: 22px;
+  object-fit: contain;
+}
