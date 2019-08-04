@@ -4,15 +4,15 @@
   margin: 0;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
   line-height: 1.25;
+  font-size: 16px;
+  font-weight: 100;
   text-align: center;
   color: #111111;
 }
 
 .get-more-section__advert {
   width: 320px;
-  height: 12px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 1.33;
@@ -22,13 +22,12 @@
 
 .get-more-section__show-all {
   width: 280px;
-  height: 40px;
+  padding: 13px 0;
   background-color: $white-two;
   border: none;
-  margin: 10px 20px;
+  margin: 10px 20px 25px;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
   line-height: 1.25;
   text-align: center;
   color: $greyish-brown;

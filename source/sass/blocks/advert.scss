@@ -3,19 +3,17 @@
   top: 0;
   width: 320px;
   height: 305px;
-  object-fit: contain;
 }
 
 .advert__headline {
   position: absolute;
   top: 10px;
-  right: 37px;
   left: 38px;
   width: 245px;
   height: 74px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 35px;
-  line-height: 1;
+  font-weight: 100;
   text-align: center;
   color: $white;
 }
@@ -24,13 +22,12 @@
   position: absolute;
   text-transform: uppercase;
   top: 110px;
-  right: 62px;
   left: 60px;
   width: 198px;
   height: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 1;
+  font-weight: 100;
   text-align: center;
   color: $white;
 }

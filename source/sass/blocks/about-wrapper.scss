@@ -1,33 +1,30 @@
-.about-wrapper--name {
-  width: 72px;
-  height: 35px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 1.25;
-  text-align: left;
-  color: #111111;
-}
+.about-wrapper {
+  &--name {
+    width: 72px;
+    height: 35px;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-transform: uppercase;
+    line-height: 1.25;
+    color: #111111;
+  }
 
-.about-wrapper--value {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  &--taste {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.about-wrapper--taste {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  &--price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.about-wrapper--price {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  &--value {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .about-wrapper__def {
@@ -36,7 +33,6 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 1.33;
-  text-align: left;
   color: $greyish-brown;
 }
 

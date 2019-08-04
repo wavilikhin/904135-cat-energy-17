@@ -1,6 +1,5 @@
 .programm-header {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -18,7 +17,7 @@
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
+  font-weight: 100;
   line-height: 1.54;
-  text-align: left;
   color: #111111;
 }
