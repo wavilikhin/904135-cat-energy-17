@@ -1,0 +1,28 @@
+.page-footer {
+  width: 320px;
+  background-color: $white-two;
+}
+
+.page-footer__logo-img {
+  width: 128px;
+  height: 24px;
+  object-fit: contain;
+  margin: 39px 96px 31px;
+}
+
+.page-footer__socials {
+  width: 128px;
+  margin: 24px auto 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  width: 280px;
+  margin: 22px auto 0;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

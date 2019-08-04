@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>Каталог Кэт энерджи</title>
   </head>
@@ -9,110 +10,200 @@
     <!-- Page header start -->
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/191x39"
+        <img src="img/logo-mobile.svg"
           alt="Логотип Кэт энерджэи"
           class="page-header__logo-image">
-        <img src="http://placehold.it/19x19"
-          alt="Показать меню навигации"
-          class="page-header__nav nav--show">
+        <img src="img/icon-close.svg"
+          alt="Скрыть меню навигации"
+          class="page-header__menu nav--hide">
       </div>
     </header>
     <!-- Page header end -->
     <!-- Page nav start-->
     <nav class="page-header__nav">
       <ul class="page-header__nav-list nav-list--hidden">
-        <li class="nav-list__item nav-list__item--main">Главная</li>
-        <li class="nav-list__item nav-list__item--products">Каталог Продукции</li>
-        <li class="nav-list__item nav-list__item--programm nav-list__item--current">Подбор Программы</li>
+        <li class="nav-list__item nav-list__item--main">
+          <a
+            class="nav-list__link"
+            href="./index.html"
+            target="blank">
+              <span class="nav-list__text">Главная</span>
+          </a>
+        </li>
+        <li class="nav-list__item nav-list__item--products">
+          <a
+            class="nav-list__link"
+            href="./catalog.html"
+            target="blank">
+            <span class="nav-list__text">Каталог прродукции</span>
+          </a>
+        </li>
+        <li class="nav-list__item nav-list__item--programm">
+          <a
+            class="nav-list__link"
+            href="./form.html"
+            target="blank">
+              <span class="nav-list__text">Подбор программы</span>
+          </a>
+        </li>
       </ul>
-      <div class="page-header__current-page current-page--hidden">
-        <h1 class="current-page__headline">Каталог продукции</h1>
-      </div>
     </nav>
     <!-- Page nav end-->
     <main class="page-main">
       <section class="page-main__products-section">
-        <h2 class="page-main__headline">Каталог продукции</h2>
-        <article class="page-main__product-wrapper">
-          <img src="http://placehold.it/140x144"
-            alt="Фото продукта"
-            class="page-main__product-image"
-          >
-          <h3 class="page-main__product-name"></h3>
-          <p class="page-main_product-info product-info--size"><span class="product-info__spec">Объем</span> <span class="product-info__val">500г</span></p>
-          <p class="page-main_product-info product-info--flavor"><span class="product-info__spec">Вкус</span> <span class="product-info__val">Курица</span></p>
-          <p class="page-main_product-info product-info--price"><span class="product-info__spec">Цена</span> <span class="product-info__val">700 Р.</span></p>
-          <button class="page-main__product-btn" type="button">Заказать</button>
+        <div class="page-main__headline-wrapper">
+          <h2 class="page-main__headline page-main__headline--catalog">Каталог продукции</h2>
+        </div>
+        <article class="page-main__product">
+          <div class="product__wrapper">
+            <div class="product__image-wrapper">
+              <img
+                class="product__image"
+                src="img/chicken-small-mobile@1x.jpg"
+                alt="Кэт энерджи со вкусом курицы 500г">
+            </div>
+            <div class="product__about-wrapper">
+              <p class="about-wrapper--name">Cat Energy<br>PRO 500 г</p>
+              <div class="about-wrapper--value"><span class="about-wrapper__def">Объем</span><span class="about-wrapper__val">500 г</span></div>
+              <div class="about-wrapper--taste"><span class="about-wrapper__def">Вкус</span><span class="about-wrapper__val">Курица</span></div>
+              <div class="about-wrapper--price"><span class="about-wrapper__def">Цена</span><span class="about-wrapper__val">700 Р.</span></div>
+            </div>
+          </div>
+          <button class="page-main__buy-btn green-btn" type="button">
+            <span class="green-btn__text">
+              Заказать
+            </span>
+          </button>
         </article>
-        <article class="page-main__product-wrapper">
-          <img src="http://placehold.it/140x144"
-            alt="Фото продукта"
-            class="page-main__product-image"
-          >
-          <h3 class="page-main__product-name"></h3>
-          <p class="page-main_product-info product-info--size"><span class="product-info__spec">Объем</span> <span class="product-info__val">1000г</span></p>
-          <p class="page-main_product-info product-info--flavor"><span class="product-info__spec">Вкус</span> <span class="product-info__val">Курица</span></p>
-          <p class="page-main_product-info product-info--price"><span class="product-info__spec">Цена</span> <span class="product-info__val">1000 Р.</span></p>
-          <button class="page-main__product-btn" type="button">Заказать</button>
+        <article class="page-main__product">
+          <div class="product__wrapper">
+            <div class="product__image-wrapper">
+              <img
+                class="product__image"
+                src="img/chicken-big-mobile@1x.jpg"
+                alt="Кэт энерджи со вкусом курицы 1000г">
+            </div>
+            <div class="product__about-wrapper">
+              <p class="about-wrapper--name">Cat Energy<br>PRO 500 г</p>
+              <div class="about-wrapper--value"><span class="about-wrapper__def">Объем</span><span class="about-wrapper__val">500 г</span></div>
+              <div class="about-wrapper--taste"><span class="about-wrapper__def">Вкус</span><span class="about-wrapper__val">Курица</span></div>
+              <div class="about-wrapper--price"><span class="about-wrapper__def">Цена</span><span class="about-wrapper__val">700 Р.</span></div>
+            </div>
+          </div>
+          <button class="page-main__buy-btn green-btn" type="button">
+            <span class="green-btn__text">
+              Заказать
+            </span>
+          </button>
         </article>
-        <article class="page-main__product-wrapper">
-          <img src="http://placehold.it/140x144"
-            alt="Фото продукта"
-            class="page-main__product-image"
-          >
-          <h3 class="page-main__product-name"></h3>
-          <p class="page-main_product-info product-info--size"><span class="product-info__spec">Объем</span> <span class="product-info__val">500г</span></p>
-          <p class="page-main_product-info product-info--flavor"><span class="product-info__spec">Вкус</span> <span class="product-info__val">Рыба</span></p>
-          <p class="page-main_product-info product-info--price"><span class="product-info__spec">Цена</span> <span class="product-info__val">700 Р.</span></p>
-          <button class="page-main__product-btn" type="button">Заказать</button>
+        <article class="page-main__product">
+          <div class="product__wrapper">
+            <div class="product__image-wrapper">
+              <img
+                class="product__image"
+                src="img/fish-small-mobile@1x.jpg"
+                alt="Кэт энерджи со вкусом рыбы 500г">
+            </div>
+            <div class="product__about-wrapper">
+              <p class="about-wrapper--name">Cat Energy<br>PRO 500 г</p>
+              <div class="about-wrapper--value"><span class="about-wrapper__def">Объем</span><span class="about-wrapper__val">500 г</span></div>
+              <div class="about-wrapper--taste"><span class="about-wrapper__def">Вкус</span><span class="about-wrapper__val">Курица</span></div>
+              <div class="about-wrapper--price"><span class="about-wrapper__def">Цена</span><span class="about-wrapper__val">700 Р.</span></div>
+            </div>
+          </div>
+          <button class="page-main__buy-btn green-btn" type="button">
+            <span class="green-btn__text">
+              Заказать
+            </span>
+          </button>
         </article>
-        <article class="page-main__product-wrapper">
-          <img src="http://placehold.it/140x144"
-            alt="Фото продукта"
-            class="page-main__product-image"
-          >
-          <h3 class="page-main__product-name"></h3>
-          <p class="page-main_product-info product-info--size"><span class="product-info__spec">Объем</span> <span class="product-info__val">1000г</span></p>
-          <p class="page-main_product-info product-info--flavor"><span class="product-info__spec">Вкус</span> <span class="product-info__val">Рыба</span></p>
-          <p class="page-main_product-info product-info--price"><span class="product-info__spec">Цена</span> <span class="product-info__val">1000 Р.</span></p>
-          <button class="page-main__product-btn" type="button">Заказать</button>
+        <article class="page-main__product">
+          <div class="product__wrapper">
+            <div class="product__image-wrapper">
+              <img
+                class="product__image"
+                src="img/fish-big-mobile@1x.jpg"
+                alt="Кэт энерджи со вкусом рыбы 1000г">
+            </div>
+            <div class="product__about-wrapper">
+              <p class="about-wrapper--name">Cat Energy<br>PRO 500 г</p>
+              <div class="about-wrapper--value"><span class="about-wrapper__def">Объем</span><span class="about-wrapper__val">500 г</span></div>
+              <div class="about-wrapper--taste"><span class="about-wrapper__def">Вкус</span><span class="about-wrapper__val">Курица</span></div>
+              <div class="about-wrapper--price"><span class="about-wrapper__def">Цена</span><span class="about-wrapper__val">700 Р.</span></div>
+            </div>
+          </div>
+          <button class="page-main__buy-btn green-btn" type="button">
+            <span class="green-btn__text">
+              Заказать
+            </span>
+          </button>
         </article>
-        <article class="page-main__product-wrapper">
-          <img src="http://placehold.it/140x144"
-            alt="Фото продукта"
-            class="page-main__product-image"
-          >
-          <h3 class="page-main__product-name"></h3>
-          <p class="page-main_product-info product-info--size"><span class="product-info__spec">Объем</span> <span class="product-info__val">500г</span></p>
-          <p class="page-main_product-info product-info--flavor"><span class="product-info__spec">Вкус</span> <span class="product-info__val">Гречка</span></p>
-          <p class="page-main_product-info product-info--price"><span class="product-info__spec">Цена</span> <span class="product-info__val">700 Р.</span></p>
-          <button class="page-main__product-btn" type="button">Заказать</button>
+        <article class="page-main__product">
+          <div class="product__wrapper">
+            <div class="product__image-wrapper">
+              <img
+                class="product__image"
+                src="img/buckwheat-small-mobile@1x.jpg"
+                alt="Кэт энерджи со вкусом гречки 500г">
+            </div>
+            <div class="product__about-wrapper">
+              <p class="about-wrapper--name">Cat Energy<br>PRO 500 г</p>
+              <div class="about-wrapper--value"><span class="about-wrapper__def">Объем</span><span class="about-wrapper__val">500 г</span></div>
+              <div class="about-wrapper--taste"><span class="about-wrapper__def">Вкус</span><span class="about-wrapper__val">Курица</span></div>
+              <div class="about-wrapper--price"><span class="about-wrapper__def">Цена</span><span class="about-wrapper__val">700 Р.</span></div>
+            </div>
+          </div>
+          <button class="page-main__buy-btn green-btn" type="button">
+            <span class="green-btn__text">
+              Заказать
+            </span>
+          </button>
         </article>
-        <article class="page-main__product-wrapper">
-          <img src="http://placehold.it/140x144"
-            alt="Фото продукта"
-            class="page-main__product-image"
-          >
-          <h3 class="page-main__product-name"></h3>
-          <p class="page-main_product-info product-info--size"><span class="product-info__spec">Объем</span> <span class="product-info__val">1000г</span></p>
-          <p class="page-main_product-info product-info--flavor"><span class="product-info__spec">Вкус</span> <span class="product-info__val">Гречка</span></p>
-          <p class="page-main_product-info product-info--price"><span class="product-info__spec">Цена</span> <span class="product-info__val">1000 Р.</span></p>
-          <button class="page-main__product-btn" type="button">Заказать</button>
+        <article class="page-main__product">
+          <div class="product__wrapper">
+            <div class="product__image-wrapper">
+              <img
+                class="product__image"
+                src="img/buckwheat-big-mobile@1x.jpg"
+                alt="Кэт энерджи со вкусом гречки 1000г">
+            </div>
+            <div class="product__about-wrapper">
+              <p class="about-wrapper--name">Cat Energy<br>PRO 500 г</p>
+              <div class="about-wrapper--value"><span class="about-wrapper__def">Объем</span><span class="about-wrapper__val">500 г</span></div>
+              <div class="about-wrapper--taste"><span class="about-wrapper__def">Вкус</span><span class="about-wrapper__val">Курица</span></div>
+              <div class="about-wrapper--price"><span class="about-wrapper__def">Цена</span><span class="about-wrapper__val">700 Р.</span></div>
+            </div>
+          </div>
+          <button class="page-main__buy-btn green-btn" type="button">
+            <span class="green-btn__text">
+              Заказать
+            </span>
+          </button>
         </article>
-        <article class="page-main__product-wrapper">
-          <img src="http://placehold.it/140x144"
-            alt="Фото продукта"
-            class="page-main__product-image"
-          >
-          <h3 class="page-main__product-name"></h3>
-          <p class="page-main_product-info product-info--size"><span class="product-info__spec">Объем</span> <span class="product-info__val">500г</span></p>
-          <p class="page-main_product-info product-info--flavor"><span class="product-info__spec">Вкус</span> <span class="product-info__val">Рис</span></p>
-          <p class="page-main_product-info product-info--price"><span class="product-info__spec">Цена</span> <span class="product-info__val">700 Р.</span></p>
-          <button class="page-main__product-btn" type="button">Заказать</button>
+        <article class="page-main__product">
+          <div class="product__wrapper">
+            <div class="product__image-wrapper">
+              <img
+                class="product__image"
+                src="img/rice-small-mobile@1x.jpg"
+                alt="Кэт энерджи со вкусом риса 500г">
+            </div>
+            <div class="product__about-wrapper">
+              <p class="about-wrapper--name">Cat Energy<br>PRO 500 г</p>
+              <div class="about-wrapper--value"><span class="about-wrapper__def">Объем</span><span class="about-wrapper__val">500 г</span></div>
+              <div class="about-wrapper--taste"><span class="about-wrapper__def">Вкус</span><span class="about-wrapper__val">Курица</span></div>
+              <div class="about-wrapper--price"><span class="about-wrapper__def">Цена</span><span class="about-wrapper__val">700 Р.</span></div>
+            </div>
+          </div>
+          <button class="page-main__buy-btn green-btn" type="button">
+            <span class="green-btn__text">
+              Заказать
+            </span>
+          </button>
         </article>
       </section>
       <section class="page-main__get-more-section">
-        <a href="#" class="get-more-section__show-more"><img src="http://placehold.it/31x31" alt="Больше товаров"></a>
+        <a href="#" class="get-more-section__show-more"><img class="icon-plus" src="img/icon-plus-mobile.svg" alt="Больше товаров"></a>
         <h3 class="get-more-section__headline">Показать еще 100500 товаров</h3>
         <p class="get-more-section__advert">На самом деле вкусов гораздо больше!</p>
         <button class="get-more-section__show-all" type="button">Показать все</button>
@@ -121,44 +212,48 @@
     <!-- Page footer start -->
     <footer class="page-footer">
       <div class="page-footer__logo-wrapper">
-        <img src="http://placehold.it/128x24" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
+        <img src="img/logo-footer.svg" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
       </div>
+      <div class="separator"></div>
       <div class="page-footer__socials">
         <a href="#" class="socials__item socials__item--vk">
           <img
-            src="http://placehold.it/22x12"
+            src="img/icon-vk.svg"
             alt="Логотип Вконтакте"
             class="socials__vk-icon">
         </a>
         <a href="#" class="socials__item socials__item--instagram">
           <img
-            src="http://placehold.it/17x17"
+            src="img/icon-insta.svg"
             alt="Логотип Инстаграм"
-            class="socials__vk-icon">
+            class="socials__insta-icon">
         </a>
         <a href="#" class="socials__item socials__item--facebook">
           <img
-            src="http://placehold.it/10x19"
+            src="img/icon-fb.svg"
             alt="Логотип Фейсбук"
-            class="socials__vk-icon">
+            class="socials__fb-icon">
         </a>
       </div>
+      <div class="separator"></div>
       <div class="page-footer__copyright">
         <a
+          class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           target="blank">
           <p class="copyright__info">HTML Academy</p>
         </a>
         <a
+          class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           target="blank">
           <img
-            src="http://placehold.it/27x34"
+            src="img/htmlacademy.svg"
             alt="Логотип HTML Academy"
             class="copyright__logo">
         </a>
       </div>
     </footer>
-      <!-- Page footer end -->
+    <!-- Page footer end -->
 </body>
 </html>

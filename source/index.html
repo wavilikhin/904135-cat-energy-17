@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -9,51 +10,75 @@
     <!-- Page header start -->
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/191x39"
+        <img src="img/logo-mobile.svg"
           alt="Логотип Кэт энерджэи"
           class="page-header__logo-image">
-        <img src="http://placehold.it/19x19"
-          alt="Показать меню навигации"
-          class="page-header__nav nav--show">
+        <img src="img/icon-close.svg"
+          alt="Скрыть меню навигации"
+          class="page-header__menu nav--hide">
       </div>
     </header>
     <!-- Page header end-->
-
     <!-- Page nav start-->
     <nav class="page-header__nav">
       <ul class="page-header__nav-list nav-list--hidden">
-        <li class="nav-list__item nav-list__item--main">Главная</li>
-        <li class="nav-list__item nav-list__item--products">Каталог Продукции</li>
-        <li class="nav-list__item nav-list__item--programm">Подбор Программы</li>
+        <li class="nav-list__item nav-list__item--main">
+          <a
+            class="nav-list__link"
+            href="./index.html"
+            target="blank">
+              <span class="nav-list__text">Главная</span>
+          </a>
+        </li>
+        <li class="nav-list__item nav-list__item--products">
+          <a
+            class="nav-list__link"
+            href="./catalog.html"
+            target="blank">
+            <span class="nav-list__text">Каталог прродукции</span>
+          </a>
+        </li>
+        <li class="nav-list__item nav-list__item--programm">
+          <a
+            class="nav-list__link"
+            href="./form.html"
+            target="blank">
+              <span class="nav-list__text">Подбор программы</span>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- Page nav end-->
     <!-- Page main start-->
     <main class="page-main">
-    <!-- Page advertising start-->
-      <div class="page-header__advert">
+      <!-- Page advertising start-->
+      <div class="page-main__advert-container">
+        <!-- png -->
+        <img src="img/index-background-mobile.png"
+          srcset=
+            "img/index-background-mobile@2x.png 2x,
+            img/index-background-mobile@3x.png 3x"
+          class="advert__background">
         <h1 class="advert__headline">Функциональное питание для котов</h1>
         <p class="advert__par">Занялся собой? Займись котом!</p>
       </div>
-      <div class="page-header__product">
-        <img src="http://placehold.it/280x270"
-          alt="Продукт Кэт энерджи"
-          class="page-header__product-image">
-      </div>
-      <div class="page-header__get-programm">
-        <a href="#" class="get-programm__link">Подобрать программу</a>
-      </div>
-    <!-- Page advertising end-->
-    <!-- Programm selection start-->
+      <!-- Page advertising end-->
+      <!-- Programm selection start-->
       <section class="page-main__programm-selection">
-      <!-- Programm slim start-->
+        <img
+          src="img/index-can-mobile@1x.png"
+          alt="Картинка с продутом Кэт энерджи"
+          class="index-can">
+        <button class="page-main__buy-btn green-btn" type="button">
+          <span class="green-btn__text">
+            Подобрать программу
+          </span>
+        </button>
+        <!-- Programm slim start-->
         <article class="page-main__programm programm--slim">
           <div class="programm-header programm-header--slim">
             <div class="programm-header__logo-wrapper logo-wrapper--slim">
-              <img src="http://placehold.it/22x24"
-                alt="Фон для кошки"
-                class="programm-header__round-logo round-logo--slim">
-              <img src="http://placehold.it/30x22"
+              <img src="img/icon-cat-slim.svg"
                 alt="Силуэт кошки"
                 class="programm-header__cat-logo cat-logo--slim">
             </div>
@@ -67,20 +92,18 @@
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
           </div>
+          <div class="programm__separator"></div>
           <div class="programm-footer programm-footer--slim">
-            <a href="#" class="programm-footer__catalog-link catalog-link--slim">Каталог Slim <img src="http://placehold.it/25x12" alt="Стрелка перехода в каталог" class="catalog-link__image catalog-link__image--slim"> </a>
+            <a href="#" class="programm-footer__catalog-link catalog-link--slim">Каталог Slim <img class="long-arrow" src="img/icon-right-arrow-long.svg" alt="Стрелка перехода в каталог" class="catalog-link__image catalog-link__image--slim"> </a>
           </div>
         </article>
       <!-- Programm slim end-->
       <!-- Programm mass start-->
         <article class="page-main__programm programm--mass">
-          <div class="page-main__programm programm--mass">
             <div class="programm-header programm-header--mass">
               <div class="programm-header__logo-wrapper logo-wrapper--mass">
-                <img src="http://placehold.it/22x24"
-                  alt="Фон для кошки"
-                  class="programm-header__round-logo round-logo--mass">
-                <img src="http://placehold.it/30x22"
+                <div class="programm-header__ellips ellips--mass"></div>
+                <img src="img/icon-cat-pro.svg"
                   alt="Силуэт кошки"
                   class="programm-header__cat-logo cat-logo--mass">
               </div>
@@ -94,21 +117,21 @@
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
             </div>
+            <div class="programm__separator"></div>
             <div class="programm-footer programm-footer--mass">
-              <a href="#" class="programm-footer__catalog-link catalog-link--mass">Каталог Pro <img src="http://placehold.it/25x12" alt="Стрелка перехода в каталог" class="catalog-link__image catalog-link__image--mass"> </a>
+              <a href="#" class="programm-footer__catalog-link catalog-link--mass">Каталог Pro <img class="long-arrow" src="img/icon-right-arrow-long.svg" alt="Стрелка перехода в каталог" class="catalog-link__image catalog-link__image--mass"> </a>
             </div>
-          </div>
         </article>
       <!-- Programm mass end -->
       </section>
       <!-- Programm selection end-->
       <!-- Product description start-->
       <section class="page-main product-description">
-        <h2 class="page-main__headline ">Как это работает</h2>
+        <h2 class="page-main__headline page-main__headline--product-description">Как это работает</h2>
         <div class="product-description__item item--healthy">
           <div class="item-image__wrapper">
             <img
-              src="http://placehold.it/26x29"
+              src="img/advantage-leaf@1x.png"
               alt="Полезные вещества"
               class="item-image item-image--healthy">
           </div>
@@ -119,7 +142,7 @@
         <div class="product-description__item item--form">
         <div class="item-image__wrapper">
           <img
-            src="http://placehold.it/26x29"
+            src="img/advantage-powder@1x.png"
             alt="Форма выпуска"
             class="item-image item-image--healthy">
         </div>
@@ -130,7 +153,7 @@
         <div class="product-description__item item--diet">
           <div class="item-image__wrapper">
             <img
-              src="http://placehold.it/26x29"
+              src="img/advantage-dining@1x.png"
               alt="Диета"
               class="item-image item-image--diet">
           </div>
@@ -141,7 +164,7 @@
         <div class="product-description__item item--result">
           <div class="item-image__wrapper">
             <img
-              src="http://placehold.it/26x29"
+              src="img/advantage-clock@1x.png"
               alt="Результат"
               class="item-image item-image--result">
           </div>
@@ -156,39 +179,43 @@
     <!-- Page footer start -->
     <footer class="page-footer">
       <div class="page-footer__logo-wrapper">
-        <img src="http://placehold.it/128x24" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
+        <img src="img/logo-footer.svg" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
       </div>
+      <div class="separator"></div>
       <div class="page-footer__socials">
         <a href="#" class="socials__item socials__item--vk">
           <img
-            src="http://placehold.it/22x12"
+            src="img/icon-vk.svg"
             alt="Логотип Вконтакте"
             class="socials__vk-icon">
         </a>
         <a href="#" class="socials__item socials__item--instagram">
           <img
-            src="http://placehold.it/17x17"
+            src="img/icon-insta.svg"
             alt="Логотип Инстаграм"
-            class="socials__vk-icon">
+            class="socials__insta-icon">
         </a>
         <a href="#" class="socials__item socials__item--facebook">
           <img
-            src="http://placehold.it/10x19"
+            src="img/icon-fb.svg"
             alt="Логотип Фейсбук"
-            class="socials__vk-icon">
+            class="socials__fb-icon">
         </a>
       </div>
+      <div class="separator"></div>
       <div class="page-footer__copyright">
         <a
+          class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           target="blank">
           <p class="copyright__info">HTML Academy</p>
         </a>
         <a
+          class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
           target="blank">
           <img
-            src="http://placehold.it/27x34"
+            src="img/htmlacademy.svg"
             alt="Логотип HTML Academy"
             class="copyright__logo">
         </a>

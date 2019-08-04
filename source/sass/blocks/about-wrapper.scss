@@ -1,0 +1,48 @@
+.about-wrapper {
+  &--name {
+    width: 72px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-transform: uppercase;
+    line-height: 1.25;
+    color: #111111;
+  }
+
+  &--taste {
+    width: 100%;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--value {
+    width: 100%;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about-wrapper__def {
+  width: 38px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $greyish-brown;
+}
+
+.about-wrapper__val {
+  width: 39px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: right;
+  color: $greyish-brown;
+}
