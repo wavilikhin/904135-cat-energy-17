@@ -1,15 +1,6 @@
-.advert__background {
-  position: relative;
-  top: 0;
-  width: 320px;
-  height: 305px;
-}
-
 .advert__headline {
-  position: absolute;
-  top: 5px;
-  left: 38px;
-  width: 245px;
+  margin: 0;
+  padding-top: 30px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 35px;
   font-weight: 100;
@@ -18,11 +9,7 @@
 }
 
 .advert__par {
-  position: absolute;
   text-transform: uppercase;
-  top: 110px;
-  left: 60px;
-  width: 198px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 100;

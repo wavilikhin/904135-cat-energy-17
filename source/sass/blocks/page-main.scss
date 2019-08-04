@@ -1,5 +1,8 @@
 .page-main__advert-container {
-  position: relative;
+  width: 320px;
+  height: 305px;
+  background-image: url("../../img/index-background-mobile.png");
+  background-size: contain;
 }
 
 .page-main__headline-wrapper {
