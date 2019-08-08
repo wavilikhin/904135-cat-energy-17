@@ -2,8 +2,12 @@
   &--mass {
     position: relative;
   }
+}
 
-  &--slim {
-    height: 51px;
+@media (min-width: $tablet-width) {
+  .logo-wrapper {
+    &--mass {
+      position: absolute;
+    }
   }
 }

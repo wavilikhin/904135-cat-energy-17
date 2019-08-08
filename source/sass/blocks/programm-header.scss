@@ -21,3 +21,22 @@
   line-height: 1.54;
   color: #111111;
 }
+
+@media (min-width: $tablet-width) {
+  .programm-header__headline {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 1.03;
+    text-align: left;
+    color: #111111;
+  }
+
+  .programm-header__logo-wrapper {
+    margin: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 420px;
+  }
+}

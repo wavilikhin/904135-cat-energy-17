@@ -1,13 +1,32 @@
-.cat-logo--slim {
-  width: 35px;
-  height: 49px;
-  padding: 0 0 10px 10px;
+.cat-logo {
+  &--slim {
+    width: 35px;
+    height: 49px;
+    padding: 0 0 10px 10px;
+  }
+
+  &--mass {
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    width: 67px;
+    height: 28px;
+  }
 }
 
-.cat-logo--mass {
-  position: absolute;
-  top: 10px;
-  left: -8px;
-  width: 67px;
-  height: 28px;
+@media (min-width: $tablet-width) {
+  .cat-logo {
+    &--slim {
+      width: 141px;
+      height: 194px;
+      padding: 0 0 10px 10px;
+    }
+
+    &--mass {
+      position: absolute;
+      top: 50px;
+      width: 268px;
+      height: 113px;
+    }
+  }
 }

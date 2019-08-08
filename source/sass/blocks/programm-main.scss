@@ -10,3 +10,19 @@
   line-height: 1.29;
   color: $greyish-brown;
 }
+
+@media (min-width: $tablet-width) {
+  .programm-main {
+    margin: 0;
+  }
+
+  .programm-main__info {
+    width: 60%;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: $greyish-brown;
+    margin: 26px 0 61px 0;
+  }
+}

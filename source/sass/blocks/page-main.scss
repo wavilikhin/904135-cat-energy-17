@@ -59,9 +59,20 @@
 
 @media (min-width: $tablet-width) {
   .page-main__advert-container {
+    width: 60%;
     background-image: none;
-    background-color: white;
-    width: 400px;
-    margin: 10px 0 50px 100px;
+    background-color: #fff;
+    margin: 20px 0 80px 120px;
+  }
+
+  .page-main__programm {
+    width: auto;
+    margin: 0 30px 30px 30px;
+    padding: 60px 52px 62px 52px;
+    position: relative;
+
+    &--mass {
+      padding: 60px 52px 86px 52px;
+    }
   }
 }

@@ -9,3 +9,9 @@
 .programm--mass {
   margin-bottom: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .programm__separator {
+    display: none;
+  }
+}
