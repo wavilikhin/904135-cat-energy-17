@@ -6,4 +6,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &--healthy {
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-position: center;
+  }
+
+  &--powder {
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-position: center;
+  }
+
+  &--diet {
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-position: center;
+  }
+
+  &--result {
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-position: center;
+  }
 }
