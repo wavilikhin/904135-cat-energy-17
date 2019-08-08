@@ -22,3 +22,26 @@
   text-align: center;
   color: #111111;
 }
+
+@media (min-width: $tablet-width) {
+  .nav-list {
+    &__item {
+      padding: 0 15px;
+      display: inline-block;
+      width: auto;
+      border: none;
+    }
+
+    &__link {
+      width: auto;
+    }
+
+    &__text {
+      width: auto;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #222222;
+    }
+  }
+}

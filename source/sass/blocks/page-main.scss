@@ -56,3 +56,12 @@
   margin: 22px 20px 20px 20px;
   background-color: $white-two;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__advert-container {
+    background-image: none;
+    background-color: white;
+    width: 400px;
+    margin: 10px 0 50px 100px;
+  }
+}

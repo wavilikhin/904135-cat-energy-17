@@ -15,3 +15,20 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .green-btn {
+    width: auto;
+    padding: 15px 30px;
+    position: absolute;
+    top: 330px;
+    left: 80px;
+  }
+
+  .green-btn__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+  }
+}

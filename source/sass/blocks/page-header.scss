@@ -26,3 +26,33 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 174px;
+    height: 80px;
+    margin: 0 34px 0 0;
+
+    &__logo {
+      height: 100%;
+    }
+
+    &__logo-image {
+      padding-top: 30px;
+      margin: 0;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+
+  .page-header__nav {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 500px;
+    text-align: right;
+  }
+}
