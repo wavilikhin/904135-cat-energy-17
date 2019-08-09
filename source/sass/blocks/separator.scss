@@ -5,3 +5,9 @@
   background-color: $greyish-brown;
   opacity: 0.1;
 }
+
+@media (min-width: $tablet-width) {
+  .separator {
+    display: none;
+  }
+}

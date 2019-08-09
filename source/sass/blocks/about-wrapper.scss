@@ -46,3 +46,27 @@
   text-align: right;
   color: $greyish-brown;
 }
+
+@media (min-width: $tablet-width) {
+  .about-wrapper {
+    &--name {
+      width: auto;
+      text-align: center;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 20px;
+      color: #111111;
+    }
+
+    &--taste span {
+      font-size: 16px;
+    }
+
+    &--price span {
+      font-size: 16px;
+    }
+
+    &--value span {
+      font-size: 16px;
+    }
+  }
+}

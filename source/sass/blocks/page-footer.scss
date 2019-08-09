@@ -26,3 +26,30 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 60px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo-img {
+    margin: 0;
+  }
+
+  .page-footer__socials {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
