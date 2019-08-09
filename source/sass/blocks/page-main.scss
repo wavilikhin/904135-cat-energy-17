@@ -61,11 +61,12 @@
   .page-main__advert-container {
     width: 60%;
     background-image: none;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 20px 0 80px 120px;
   }
 
   .page-main__programm {
+    box-sizing: border-box;
     width: auto;
     margin: 0 30px 30px 30px;
     padding: 60px 52px 62px 52px;
@@ -74,5 +75,14 @@
     &--mass {
       padding: 60px 52px 86px 52px;
     }
+  }
+
+  .page-main__headline {
+    position: absolute;
+    top: -120px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    text-align: left;
+    color: #111111;
   }
 }

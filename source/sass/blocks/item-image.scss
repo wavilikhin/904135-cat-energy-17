@@ -27,3 +27,60 @@
     background-position: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .item-image__wrapper {
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+
+    &--healthy::after {
+      content: "1";
+      z-index: -1;
+      position: absolute;
+      bottom: 345px;
+      left: 115px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      text-align: left;
+      color: #f2f2f2;
+    }
+
+    &--powder::after {
+      content: "2";
+      z-index: -1;
+      position: absolute;
+      bottom: 345px;
+      right: 115px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      text-align: left;
+      color: #f2f2f2;
+    }
+
+    &--diet::after {
+      content: "3";
+      z-index: -1;
+      position: absolute;
+      bottom: 45px;
+      left: 115px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      text-align: left;
+      color: #f2f2f2;
+    }
+
+    &--result::after {
+      content: "4";
+      z-index: -1;
+      position: absolute;
+      bottom: 45px;
+      right: 115px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      text-align: left;
+      color: #f2f2f2;
+    }
+  }
+}

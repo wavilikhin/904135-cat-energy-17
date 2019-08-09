@@ -6,3 +6,22 @@
   display: flex;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .product-description {
+    position: relative;
+    width: auto;
+    margin: 175px 30px 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-description__item {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 100px;
+  }
+}
