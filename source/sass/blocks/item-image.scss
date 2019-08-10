@@ -34,9 +34,11 @@
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
+    counter-reset: number;
 
     &--healthy::after {
-      content: "1";
+      counter-increment: section;
+      content: counter(section);
       z-index: -1;
       position: absolute;
       bottom: 345px;
@@ -48,7 +50,8 @@
     }
 
     &--powder::after {
-      content: "2";
+      counter-increment: section;
+      content: counter(section);
       z-index: -1;
       position: absolute;
       bottom: 345px;
@@ -60,7 +63,8 @@
     }
 
     &--diet::after {
-      content: "3";
+      counter-increment: section;
+      content: counter(section);
       z-index: -1;
       position: absolute;
       bottom: 45px;
@@ -72,7 +76,8 @@
     }
 
     &--result::after {
-      content: "4";
+      counter-increment: section;
+      content: counter(section);
       z-index: -1;
       position: absolute;
       bottom: 45px;

@@ -9,6 +9,7 @@
 
 @media (min-width: $tablet-width) {
   .product-description {
+    counter-reset: section;
     position: relative;
     width: auto;
     margin: 175px 30px 30px 30px;

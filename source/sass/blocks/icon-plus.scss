@@ -4,3 +4,10 @@
   margin: 25px 145px 18px;
   opacity: 0.2;
 }
+
+@media (min-width: $tablet-width) {
+  .icon-plus {
+    width: 61px;
+    height: 61px;
+  }
+}

@@ -1,7 +1,7 @@
 .about-wrapper {
   &--name {
     width: 72px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
     font-weight: 500;
     font-family: "Oswald", "Arial", sans-serif;
     text-transform: uppercase;
@@ -50,22 +50,76 @@
 @media (min-width: $tablet-width) {
   .about-wrapper {
     &--name {
-      width: auto;
+      width: 50%;
+      margin: 0 auto 30px;
       text-align: center;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 20px;
       color: #111111;
     }
 
+    &--taste {
+      width: 100%;
+      position: relative;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 23px;
+        background-color: rgb(200, 200, 200);
+      }
+    }
+
+    &--price {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 23px;
+        background-color: rgb(200, 200, 200);
+      }
+    }
+
+    &--value {
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 23px;
+        background-color: rgb(200, 200, 200);
+      }
+    }
+
     &--taste span {
+      width: auto;
       font-size: 16px;
     }
 
     &--price span {
+      width: auto;
       font-size: 16px;
     }
 
     &--value span {
+      width: auto;
       font-size: 16px;
     }
   }
