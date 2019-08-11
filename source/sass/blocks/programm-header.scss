@@ -40,3 +40,24 @@
     left: 58vw;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programm-header {
+    margin: 0;
+    padding: 0;
+
+    &__headline {
+      margin: 0;
+    }
+
+    &__headline-wrapper {
+      margin-left: 13%;
+    }
+
+    &__logo-wrapper {
+      position: static;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

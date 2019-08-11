@@ -15,3 +15,17 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programm {
+    box-sizing: border-box;
+
+    &--mass {
+      padding-right: 74px;
+    }
+
+    &--slim {
+      padding-right: 56px;
+    }
+  }
+}

@@ -26,3 +26,21 @@
     padding-bottom: 100px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-description {
+    counter-reset: section;
+    position: relative;
+    margin: 79px 0 0;
+    padding: 0 110px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      width: 25%;
+      margin: 0;
+    }
+  }
+}

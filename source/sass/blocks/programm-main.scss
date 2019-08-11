@@ -26,3 +26,10 @@
     margin: 26px 0 61px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programm-main__info {
+    margin: 45px 0 36px;
+    width: 100%;
+  }
+}

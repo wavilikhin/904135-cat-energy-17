@@ -147,11 +147,6 @@
     }
   }
 
-  .page-main__product-description {
-    display: none;
-    counter-reset: section;
-  }
-
   .page-main__product button {
     position: static;
     align-self: flex-end;
@@ -162,5 +157,47 @@
 
   .page-main__get-more-section {
     display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__advert-container {
+    width: 50%;
+    max-width: 1100px;
+    margin: 0;
+    padding-left: 13%;
+  }
+
+  .page-main__headline {
+    &--product-description {
+      margin: 0 0 60px 0;
+    }
+  }
+
+  .page-main__programm-selection {
+    margin-top: 300px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-main__programm {
+    box-sizing: border-box;
+    width: 47%;
+    margin: 0;
+    padding: 47px 0 62px 53px;
+  }
+
+  .page-main__programm-selection .index-can {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 11%;
+    left: 39%;
+  }
+
+  .page-main__programm-selection button {
+    top: 35%;
+    left: 11.5%;
   }
 }

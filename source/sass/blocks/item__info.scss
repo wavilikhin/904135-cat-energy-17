@@ -16,3 +16,9 @@
     color: $greyish-brown;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item__info {
+    width: 81%;
+  }
+}

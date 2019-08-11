@@ -89,3 +89,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item-image__wrapper {
+    &--healthy::after {
+      bottom: 43px;
+      left: 16%;
+    }
+
+    &--powder::after {
+      bottom: 43px;
+      left: 37%;
+    }
+
+    &--diet::after {
+      bottom: 43px;
+      left: 58%;
+    }
+
+    &--result::after {
+      bottom: 43px;
+      left: 79%;
+    }
+  }
+}
