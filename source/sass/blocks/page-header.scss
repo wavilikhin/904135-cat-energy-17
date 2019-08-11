@@ -65,6 +65,13 @@
     margin: 0;
     padding: 0;
 
+    &--catalog {
+      width: auto;
+      height: auto;
+      position: static;
+      padding: 53px 0 53px 109px;
+    }
+
     &__logo {
       margin: 0;
       position: relative;
@@ -89,12 +96,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    &--catalog {
+      width: auto;
+      height: auto;
+      padding: 77px 111px;
+      background-image: none;
+      background-color: #ffffff;
+    }
   }
 
   .page-header__nav-list {
     width: 75%;
     margin: auto;
     padding-top: 10%;
+
+    &--catalog {
+      width: auto;
+      height: auto;
+      display: block;
+      position: static;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .page-header__nav-list span {
@@ -103,5 +127,9 @@
     font-size: 20px;
     line-height: 1.25;
     color: #ffffff;
+  }
+
+  .page-header__nav-list--catalog span {
+    color: black;
   }
 }

@@ -33,3 +33,9 @@
     color: #ffffff;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .green-btn__text {
+    font-size: 16px;
+  }
+}

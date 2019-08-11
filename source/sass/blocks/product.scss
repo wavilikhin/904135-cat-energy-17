@@ -43,3 +43,21 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product {
+    &__wrapper {
+      width: auto;
+    }
+
+    &__image {
+      width: 195px;
+    }
+
+    &__about-wrapper {
+      margin: 0 0 40px 0;
+      padding-top: 0;
+      width: auto;
+    }
+  }
+}

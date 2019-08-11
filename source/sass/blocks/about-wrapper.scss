@@ -124,3 +124,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-wrapper {
+    &--name {
+      width: 73%;
+    }
+  }
+}

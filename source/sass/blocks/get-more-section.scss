@@ -45,3 +45,35 @@
     color: $greyish-brown;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .get-more-section {
+    &__show-more {
+      width: auto;
+    }
+
+    &__headline {
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      height: auto;
+    }
+
+    &__advert {
+      margin: 0;
+      padding: 0;
+      width: 60%;
+      height: auto;
+    }
+
+    &__show-all {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__show-more img {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
