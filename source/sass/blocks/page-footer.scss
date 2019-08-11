@@ -53,3 +53,9 @@
     justify-content: flex-end;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 64px 110px;
+  }
+}
