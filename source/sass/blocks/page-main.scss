@@ -1,9 +1,9 @@
 .page-main__advert-container {
-  width: 320px;
-  height: 305px;
   background-color: #68b738;
   background-image: url("../../img/index-background-mobile.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 29px 37px 202px 38px;
 }
 
 .page-main__headline-wrapper {
