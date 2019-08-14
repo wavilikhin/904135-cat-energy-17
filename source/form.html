@@ -8,13 +8,15 @@
   </head>
   <body>
     <!-- Page header start -->
-    <header class="page-header page-header--form">
-      <div class="page-header__logo page-header__logo--form">
-        <a href="index.html">
+    <header class="page-header">
+      <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img src="img/logo-mobile.svg"
             alt="Логотип Кэт энерджэи"
-            class="page-header__logo-image page-header__logo-image--form">
-        </a>
+            class="page-header__logo-image">
+        </picture>
         <img src="img/icon-close.svg"
           alt="Скрыть меню навигации"
           class="page-header__menu nav--hide">
