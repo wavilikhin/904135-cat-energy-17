@@ -11,15 +11,29 @@
     <header class="page-header">
       <div class="page-header__logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg"
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/logo-desktop-svg.png 1x, img/logo-desktop-svg@2x.png 2x, img/logo-desktop-svg@3x.png 3x">
+          <source
+            media="(min-width: 768px)"
+            srcset="img/logo-tablet-svg.png 1x, img/logo-tablet-svg@2x.png 2x, img/logo-tablet-svg@3x.png 3x">
+          <img
+            width="191px"
+            height="39px"
+            src="img/logo-mobile-header-svg.png"
+            srcset="img/logo-mobile-header-svg@2x.png 2x, img/logo-mobile-header-svg@3x.png 3x"
             alt="Логотип Кэт энерджэи"
             class="page-header__logo-image">
         </picture>
-        <img src="img/icon-close.svg"
-          alt="Скрыть меню навигации"
-          class="page-header__menu nav--hide">
+        <picture>
+          <img
+            width="19px"
+            height="19px"
+            src="img/m-close-svg.png"
+            srcset="img/m-close-svg@2x.png 2x, img/m-close-svg@3x.png 3x"
+            alt="Скрыть меню навигации"
+            class="page-header__menu nav--hide">
+        </picture>
       </div>
     </header>
     <!-- Page header end-->
@@ -60,14 +74,23 @@
       <!-- Page advertising end-->
       <!-- Programm selection start-->
       <section class="page-main__programm-selection">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img
-            src="img/index-can-mobile@1x.png"
-            alt="Картинка с продутом Кэт энерджи"
-            class="index-can">
-        </picture>
+        <div class="page-main__can-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/index-can-desktop@1x.png 1x, img/index-can-png@2x.png 2x, img/index-can-png@3x.png 3x">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet-jpg@2x.png 2x, img/index-can-tablet-jpg@3x.png 3x">
+            <img
+              width="280px"
+              height="270px"
+              src="img/index-can-mobile@1x.png"
+              srcset="img/index-can-mobile-png@2x.png 2x, img/index-can-mobile-png@3x.png 3x"
+              alt="Картинка с продутом Кэт энерджи"
+              class="can-img">
+          </picture>
+      </div>
         <button class="page-main__buy-btn green-btn" type="button">
           <span class="green-btn__text">
             Подобрать программу
@@ -77,7 +100,11 @@
         <article class="page-main__programm programm--slim">
           <div class="programm-header programm-header--slim">
             <div class="programm-header__logo-wrapper logo-wrapper--slim">
-              <img src="img/icon-cat-slim.svg"
+              <img
+                width="35px"
+                height="49px"
+                src="img/icon-cat-slim.png"
+                srcset="img/icon-cat-slim@2x.png 2x, img/icon-cat-slim@3x.png 3x"
                 alt="Силуэт кошки"
                 class="programm-header__cat-logo cat-logo--slim">
             </div>
@@ -93,7 +120,17 @@
           </div>
           <div class="programm__separator"></div>
           <div class="programm-footer programm-footer--slim">
-            <a href="#" class="programm-footer__catalog-link catalog-link--slim">Каталог Slim <img class="long-arrow" src="img/icon-right-arrow-long.svg" alt="Стрелка перехода в каталог" class="catalog-link__image catalog-link__image--slim"> </a>
+            <a href="#"
+              class="programm-footer__catalog-link catalog-link--slim">
+                Каталог Slim
+                <img class="long-arrow"
+                  width="25px"
+                  height="12px"
+                  src="img/right-arrow-long-svg.png"
+                  srcset="img/right-arrow-long-svg@2x.png 2x, img/right-arrow-long-svg@3x.png 3x"
+                  alt="Стрелка перехода в каталог"
+                  class="catalog-link__image catalog-link__image--mass">
+            </a>
           </div>
         </article>
       <!-- Programm slim end-->
@@ -101,9 +138,13 @@
         <article class="page-main__programm programm--mass">
             <div class="programm-header programm-header--mass">
               <div class="programm-header__logo-wrapper logo-wrapper--mass">
-                <img src="img/icon-cat-pro.svg"
-                  alt="Силуэт кошки"
-                  class="programm-header__cat-logo cat-logo--mass">
+                <img
+                width="67px"
+                height="28px"
+                src="img/icon-cat-pro-copy-2.png"
+                srcset="img/icon-cat-pro-copy-2@2x.png 2x, img/icon-cat-pro-copy-2@3x.png 3x"
+                alt="Силуэт кошки"
+                class="programm-header__cat-logo cat-logo--mass">
               </div>
               <div class="programm-header__headline-wrapper headline-wrapper--mass">
                 <h2 class="programm-header__headline headline--mass">Набор массы</h2>
@@ -117,7 +158,17 @@
             </div>
             <div class="programm__separator"></div>
             <div class="programm-footer programm-footer--mass">
-              <a href="#" class="programm-footer__catalog-link catalog-link--mass">Каталог Pro <img class="long-arrow" src="img/icon-right-arrow-long.svg" alt="Стрелка перехода в каталог" class="catalog-link__image catalog-link__image--mass"> </a>
+              <a href="#"
+                class="programm-footer__catalog-link catalog-link--mass">
+                  Каталог Pro
+                  <img class="long-arrow"
+                    width="25px"
+                    height="12px"
+                    src="img/right-arrow-long-svg.png"
+                    srcset="img/right-arrow-long-svg@2x.png 2x, img/right-arrow-long-svg@3x.png 3x"
+                    alt="Стрелка перехода в каталог"
+                    class="catalog-link__image catalog-link__image--mass">
+              </a>
             </div>
         </article>
       <!-- Programm mass end -->
@@ -163,28 +214,35 @@
       <div class="page-footer__logo-wrapper">
         <img src="img/logo-footer.svg" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
       </div>
-      <div class="separator"></div>
       <div class="page-footer__socials">
         <a href="#" class="socials__item socials__item--vk">
           <img
-            src="img/icon-vk.svg"
+            width="22px"
+            height="12px"
+            src="img/m-vk-svg.png"
+            srcset="img/m-vk-svg@2x.png 2x, img/m-vk-svg@3x.png 3x"
             alt="Логотип Вконтакте"
             class="socials__vk-icon">
         </a>
         <a href="#" class="socials__item socials__item--instagram">
           <img
-            src="img/icon-insta.svg"
+            width="17px"
+            height="17px"
+            src="img/m-insta-svg.png"
+            srcset="img/m-insta-svg@2x.png 2x, img/m-insta-svg@3x.png 3x"
             alt="Логотип Инстаграм"
             class="socials__insta-icon">
         </a>
         <a href="#" class="socials__item socials__item--facebook">
           <img
-            src="img/icon-fb.svg"
+            width="10px"
+            height="19px"
+            src="img/m-fb-svg.png"
+            srcset="img/m-fb-svg@2x.png 2x, img/m-fb-svg@3x.png 3x"
             alt="Логотип Фейсбук"
             class="socials__fb-icon">
         </a>
       </div>
-      <div class="separator"></div>
       <div class="page-footer__copyright">
         <a
           class="copyright__link"
@@ -197,7 +255,10 @@
           href="https://htmlacademy.ru/intensive/adaptive"
           target="blank">
           <img
-            src="img/htmlacademy.svg"
+            width="27px"
+            height="34px"
+            src="img/htmlacademy-svg.png"
+            srcset="img/htmlacademy-svg@2x.png 2x, img/htmlacademy-svg@3x.png 3x"
             alt="Логотип HTML Academy"
             class="copyright__logo">
         </a>

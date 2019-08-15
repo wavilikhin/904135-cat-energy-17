@@ -11,15 +11,29 @@
     <header class="page-header">
       <div class="page-header__logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg"
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/logo-desktop-svg.png 1x, img/logo-desktop-svg@2x.png 2x, img/logo-desktop-svg@3x.png 3x">
+          <source
+            media="(min-width: 768px)"
+            srcset="img/logo-tablet-svg.png 1x, img/logo-tablet-svg@2x.png 2x, img/logo-tablet-svg@3x.png 3x">
+          <img
+            width="191px"
+            height="39px"
+            src="img/logo-mobile-header-svg.png"
+            srcset="img/logo-mobile-header-svg@2x.png 2x, img/logo-mobile-header-svg@3x.png 3x"
             alt="Логотип Кэт энерджэи"
             class="page-header__logo-image">
         </picture>
-        <img src="img/icon-close.svg"
-          alt="Скрыть меню навигации"
-          class="page-header__menu nav--hide">
+        <picture>
+          <img
+            width="19px"
+            height="19px"
+            src="img/m-close-svg.png"
+            srcset="img/m-close-svg@2x.png 2x, img/m-close-svg@3x.png 3x"
+            alt="Скрыть меню навигации"
+            class="page-header__menu nav--hide">
+        </picture>
       </div>
     </header>
     <!-- Page header end -->
@@ -236,28 +250,35 @@
       <div class="page-footer__logo-wrapper">
         <img src="img/logo-footer.svg" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
       </div>
-      <div class="separator"></div>
       <div class="page-footer__socials">
         <a href="#" class="socials__item socials__item--vk">
           <img
-            src="img/icon-vk.svg"
+            width="22px"
+            height="12px"
+            src="img/m-vk-svg.png"
+            srcset="img/m-vk-svg@2x.png 2x, img/m-vk-svg@3x.png 3x"
             alt="Логотип Вконтакте"
             class="socials__vk-icon">
         </a>
         <a href="#" class="socials__item socials__item--instagram">
           <img
-            src="img/icon-insta.svg"
+            width="17px"
+            height="17px"
+            src="img/m-insta-svg.png"
+            srcset="img/m-insta-svg@2x.png 2x, img/m-insta-svg@3x.png 3x"
             alt="Логотип Инстаграм"
             class="socials__insta-icon">
         </a>
         <a href="#" class="socials__item socials__item--facebook">
           <img
-            src="img/icon-fb.svg"
+            width="10px"
+            height="19px"
+            src="img/m-fb-svg.png"
+            srcset="img/m-fb-svg@2x.png 2x, img/m-fb-svg@3x.png 3x"
             alt="Логотип Фейсбук"
             class="socials__fb-icon">
         </a>
       </div>
-      <div class="separator"></div>
       <div class="page-footer__copyright">
         <a
           class="copyright__link"
@@ -270,7 +291,10 @@
           href="https://htmlacademy.ru/intensive/adaptive"
           target="blank">
           <img
-            src="img/htmlacademy.svg"
+            width="27px"
+            height="34px"
+            src="img/htmlacademy-svg.png"
+            srcset="img/htmlacademy-svg@2x.png 2x, img/htmlacademy-svg@3x.png 3x"
             alt="Логотип HTML Academy"
             class="copyright__logo">
         </a>
