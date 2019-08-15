@@ -100,13 +100,19 @@
         <article class="page-main__programm programm--slim">
           <div class="programm-header programm-header--slim">
             <div class="programm-header__logo-wrapper logo-wrapper--slim">
-              <img
-                width="35px"
-                height="49px"
-                src="img/icon-cat-slim.png"
-                srcset="img/icon-cat-slim@2x.png 2x, img/icon-cat-slim@3x.png 3x"
-                alt="Силуэт кошки"
-                class="programm-header__cat-logo cat-logo--slim">
+              <picture>
+                <source media="(min-width:1440)"
+                  srcset="img/cat-slim-svg.png 1x, img/cat-slim-svg@2x.png 2x, img/cat-slim-svg@3x.png 3x">
+                <source media="(min-width:768px)"
+                  srcset="img/cat-slim-svg-200.png 1x, img/cat-slim-svg-200@2x.png 2x, cat-slim-svg-200@3x.png 3x">
+                <img
+                  width="35px"
+                  height="49px"
+                  src="img/icon-cat-slim.png"
+                  srcset="img/icon-cat-slim@2x.png 2x, img/icon-cat-slim@3x.png 3x"
+                  alt="Силуэт кошки"
+                  class="programm-header__cat-logo cat-logo--slim">
+              </picture>
             </div>
             <div class="programm-header__headline-wrapper headline-wrapper--slim">
               <h2 class="programm-header__headline headline--slim">Похудение</h2>
@@ -138,6 +144,11 @@
         <article class="page-main__programm programm--mass">
             <div class="programm-header programm-header--mass">
               <div class="programm-header__logo-wrapper logo-wrapper--mass">
+                <picture>
+                <source media="(min-width:1440)"
+                  srcset="img/cat-pro-svg.png 1x, img/cat-pro-svg@2x.png 2x, img/cat-pro-svg@3x.png 3x">
+                <source media="(min-width:768px)"
+                  srcset="img/cat-pro-svg-200.png 1x, img/cat-pro-svg-200@2x.png 2x, cat-pro-svg-200@3x.png 3x">
                 <img
                 width="67px"
                 height="28px"
@@ -215,7 +226,9 @@
         <img src="img/logo-footer.svg" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
       </div>
       <div class="page-footer__socials">
-        <a href="#" class="socials__item socials__item--vk">
+        <a class="socials__item socials__item--vk"
+            href="https://vk.com/htmlacademy"
+            target="blank">
           <img
             width="22px"
             height="12px"
@@ -224,8 +237,10 @@
             alt="Логотип Вконтакте"
             class="socials__vk-icon">
         </a>
-        <a href="#" class="socials__item socials__item--instagram">
-          <img
+        <a class="socials__item socials__item--instagram"
+            href="https://www.instagram.com/htmlacademy/"
+            target="blank">
+            <img
             width="17px"
             height="17px"
             src="img/m-insta-svg.png"
@@ -233,8 +248,10 @@
             alt="Логотип Инстаграм"
             class="socials__insta-icon">
         </a>
-        <a href="#" class="socials__item socials__item--facebook">
-          <img
+        <a class="socials__item socials__item--facebook"
+            href="https://www.facebook.com/htmlacademy"
+            target="blank">
+            <img
             width="10px"
             height="19px"
             src="img/m-fb-svg.png"

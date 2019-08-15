@@ -87,6 +87,7 @@
     background-image: none;
     background-color: #ffffff;
     margin: 20px 0 80px 120px;
+    padding: 0;
   }
 
   .page-main__programm {
@@ -114,6 +115,10 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     text-align: left;
+
+    &--product-description {
+      margin-bottom: 63px;
+    }
   }
 
   .page-main__headline-par {
@@ -195,10 +200,8 @@
 
 @media (min-width: $desktop-width) {
   .page-main__advert-container {
-    width: 50%;
-    max-width: 1100px;
+    max-width: 450px;
     margin: 0;
-    padding-left: 13%;
   }
 
   .page-main__headline {
