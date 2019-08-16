@@ -1,18 +1,14 @@
 .get-more-section__headline {
-  width: 320px;
-  height: 17px;
   margin: 0;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 1.25;
-  font-size: 16px;
   font-weight: 100;
   text-align: center;
   color: #111111;
 }
 
 .get-more-section__advert {
-  width: 320px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 1.33;
@@ -31,4 +27,44 @@
   line-height: 1.25;
   text-align: center;
   color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .get-more-section__headline {
+    width: 75%;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #111111;
+  }
+
+  .get-more-section__advert {
+    width: 75%;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: $greyish-brown;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .get-more-section {
+    &__headline {
+      margin: 0 auto;
+      padding: 0;
+      width: 50%;
+      height: auto;
+    }
+
+    &__advert {
+      margin: 0 auto 60px;
+      padding: 0;
+      width: 60%;
+      height: auto;
+    }
+
+    &__show-more img {
+      width: auto;
+      margin: 0;
+    }
+  }
 }

@@ -1,5 +1,16 @@
 .programm-main {
-  margin: 25px 59px 0 20px;
+  position: relative;
+  margin: 25px 59px 44px 20px;
+
+  &::after {
+    position: absolute;
+    top: 110px;
+    content: "";
+    height: 1px;
+    width: 240px;
+    background-color: $greyish-brown;
+    opacity: 0.2;
+  }
 }
 
 .programm-main__info {
@@ -9,4 +20,31 @@
   font-size: 14px;
   line-height: 1.29;
   color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .programm-main {
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .programm-main__info {
+    width: 50vw;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: $greyish-brown;
+    margin: 26px 0 61px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-main__info {
+    margin: 45px 0 36px;
+    width: 100%;
+  }
 }

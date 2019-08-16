@@ -1,7 +1,8 @@
 .green-btn {
+  display: block;
   width: 280px;
   padding: 10px 0;
-  margin: 0 0 0 20px;
+  margin: 0 auto;
   background-color: #68b738;
   border: none;
 }
@@ -10,7 +11,32 @@
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 100;
+  font-size: 14px;
   line-height: 1.25;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .green-btn {
+    width: auto;
+    padding: 15px 30px;
+    position: absolute;
+    top: 360px;
+    left: 120px;
+    margin-top: 20px;
+  }
+
+  .green-btn__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .green-btn__text {
+    font-size: 16px;
+  }
 }

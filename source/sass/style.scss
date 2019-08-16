@@ -1,11 +1,12 @@
 @import "normalize.scss";
 @import "fonts.scss";
+@import "colors.scss";
 @import "variables.scss";
 @import "blocks/page-header.scss";
 @import "blocks/nav-list.scss";
+@import "blocks/green-btn.scss";
 @import "blocks/page-main.scss";
 @import "blocks/advert.scss";
-@import "blocks/programm-selection.scss";
 @import "blocks/programm.scss";
 @import "blocks/get-more-section.scss";
 @import "blocks/programm-header.scss";
@@ -15,7 +16,6 @@
 @import "blocks/product-description.scss";
 @import "blocks/about-wrapper.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/socials.scss";
 @import "blocks/copyright.scss";
 @import "blocks/item-image.scss";
 @import "blocks/item__info.scss";
@@ -24,4 +24,3 @@
 @import "blocks/icon-plus.scss";
 @import "blocks/separator.scss";
 @import "blocks/long-arrow.scss";
-@import "blocks/green-btn.scss"

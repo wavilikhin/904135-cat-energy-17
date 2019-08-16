@@ -1,7 +1,29 @@
-.logo-wrapper--mass {
-  position: relative;
+.logo-wrapper {
+  &--mass {
+    position: relative;
+  }
 }
 
-.logo-wrapper--slim {
-  height: 51px;
+@media (min-width: $tablet-width) {
+  .logo-wrapper {
+    &--mass {
+      position: absolute;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-wrapper {
+    &--mass {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    &--slim {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
 }
