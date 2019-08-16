@@ -200,8 +200,9 @@
 
 @media (min-width: $desktop-width) {
   .page-main__advert-container {
-    max-width: 450px;
+    max-width: 610px;
     margin: 0;
+    padding-left: 193px;
   }
 
   .page-main__headline {
@@ -212,10 +213,16 @@
 
   .page-main__headline-par--form {
     margin: 0;
+    max-width: 325px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: #111111;
   }
 
   .page-main__programm-selection {
-    margin-top: 300px;
+    max-width: 1400px;
+    margin: 300px auto 0;
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -223,7 +230,7 @@
 
   .page-main__programm {
     box-sizing: border-box;
-    width: 47%;
+    width: 570px;
     margin: 0;
     padding: 47px 0 62px 53px;
   }
@@ -242,12 +249,14 @@
   }
 
   .page-main__programm-selection button {
-    top: 45%;
-    left: 11.5%;
+    top: 480px;
+    left: 190px;
   }
 
   .page-main__product {
-    width: auto;
+    width: 245px;
+    height: 431px;
+    justify-content: space-between;
 
     & button {
       padding: 13px 53px 12px 55px;
@@ -264,13 +273,13 @@
 
     &:last-child {
       padding-top: 55px;
-      justify-content: space-between;
-      flex-shrink: 0;
+      align-self: unset;
     }
   }
 
   .page-main__products-section {
     padding: 0 111px;
+    justify-content: space-between;
   }
 
   .page-main--form {
@@ -280,5 +289,12 @@
   .page-main__headline-wrapper--form {
     position: static;
     margin-bottom: 69px;
+  }
+
+  .page-main__can-wrapper {
+    margin: 0;
+    position: absolute;
+    top: 150px;
+    left: 39%;
   }
 }

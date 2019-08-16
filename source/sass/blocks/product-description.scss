@@ -31,8 +31,9 @@
 @media (min-width: $desktop-width) {
   .product-description {
     counter-reset: section;
+    max-width: 1440px;
     position: relative;
-    margin: 79px 0 0;
+    margin: 79px auto 0;
     padding: 0 110px;
     width: auto;
     display: flex;

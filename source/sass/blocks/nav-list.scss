@@ -1,4 +1,5 @@
 .nav-list__item {
+  position: relative;
   width: 100%;
   padding: 24px 0 24px;
   border-top: 0.2px solid $white-two;
@@ -43,12 +44,58 @@
       color: #222222;
     }
   }
+
+  .nav-list__item--current {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 62px;
+      height: 2px;
+      top: 30px;
+      left: 15px;
+      background-color: $leaf;
+    }
+  }
+
+  .nav-list__item--current.nav-list__item--products {
+    &::after {
+      width: 160px;
+    }
+  }
+
+  .nav-list__item--current.nav-list__item--programm {
+    &::after {
+      width: 150px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .nav-list {
     &__item {
       padding: 0 7px;
+    }
+  }
+
+  .nav-list__item--current {
+    &::after {
+      background-color: #ffffff;
+      width: 70px;
+      left: 7px;
+    }
+  }
+
+  .nav-list__item--current.nav-list__item--products {
+    &::after {
+      width: 180px;
+      background-color: $leaf;
+    }
+  }
+
+  .nav-list__item--current.nav-list__item--programm {
+    &::after {
+      width: 170px;
+      background-color: $leaf;
     }
   }
 }

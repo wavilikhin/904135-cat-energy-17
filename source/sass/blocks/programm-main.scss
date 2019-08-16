@@ -1,5 +1,16 @@
 .programm-main {
-  margin: 25px 59px 0 20px;
+  position: relative;
+  margin: 25px 59px 44px 20px;
+
+  &::after {
+    position: absolute;
+    top: 110px;
+    content: "";
+    height: 1px;
+    width: 240px;
+    background-color: $greyish-brown;
+    opacity: 0.2;
+  }
 }
 
 .programm-main__info {
@@ -14,6 +25,10 @@
 @media (min-width: $tablet-width) {
   .programm-main {
     margin: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .programm-main__info {
