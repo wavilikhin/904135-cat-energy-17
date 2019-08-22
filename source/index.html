@@ -241,24 +241,35 @@
               <span class="days-spend--value">60 дней</span>
               <span class="days-spend--disc">затрачено времени</span>
             </div>
-            <p class="example-section__costs"></p>
+            <p class="example-section__costs">Затраты на питание: 15 000 руб.</p>
           </div>
         </div>
         <div class="example-section__demonstration">
-          <img
-            class="example-section__before-pic"
-            src=""
-            alt="Кот 'до'">
-          <img
-            class="example-section__after-pic"
-            src=""
-            alt="Кот 'после'">
-          <span class="example-section__before-pic">Было</span>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x, img/before-desktop@3x.png 3x">
+            <img
+              class="example-section__before-pic"
+              width="311px"
+              height="232px"
+              src="img/before-mobile@1x.png"
+              srcset="img/before-mobile@2x.png 2x, img/before-mobile@3x.png 3x"
+              alt="Кот 'до'">
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="img/after-desktop@1x.png 1x">
+          </picture>
+          <div class="example-section__before-after">
+          <span class="example-section__before-text">Было</span>
           <label class="example-section__switcher">
               <input type="checkbox">
               <span class="example-section__slider"></span>
           </label>
           <span class="example-section__after-text">Стало</span>
+        </div>
         </div>
       </section>
       <!-- Product description end-->
@@ -269,6 +280,8 @@
       <article class="page-footer__partnership">
         <h3 class="page-footer__headline">приглашаем к сотрудничеству дилеров!</h3>
         <p class="page-footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </article>
+      <div class="page-footer__map">
         <img
           width="55px"
           height="53px"
@@ -276,51 +289,46 @@
           src="img/map-pin-png-50.png"
           srcset="img/map-pin-png-50@2x.png 2x, img/map-pin-png-50@3x.png 3x"
           alt="Пин кэт энерджи">
-        <img
-          class="page-footer__map"
-          width="320px"
-          height="400px"
-          src="img/map.png"
-          srcset="img/map@2x.png 2x, img/map@3x.png 3x"
-          alt="Наше местоположение на карте">
-      </article>
+      </div>
       <div class="page-footer__logo-wrapper">
         <img src="img/logo-footer.svg" alt="Логотип Кэт энерджи" class="page-footer__logo-img">
       </div>
       <div class="page-footer__socials">
-        <a class="socials__item socials__item--vk"
-            href="https://vk.com/htmlacademy"
-            target="blank">
-          <img
-            width="22px"
-            height="12px"
-            src="img/m-vk-svg.png"
-            srcset="img/m-vk-svg@2x.png 2x, img/m-vk-svg@3x.png 3x"
-            alt="Логотип Вконтакте"
-            class="socials__vk-icon">
-        </a>
-        <a class="socials__item socials__item--instagram"
-            href="https://www.instagram.com/htmlacademy/"
-            target="blank">
+        <div class="socials__wrapper">
+          <a class="socials__item socials__item--vk"
+              href="https://vk.com/htmlacademy"
+              target="blank">
             <img
-            width="17px"
-            height="17px"
-            src="img/m-insta-svg.png"
-            srcset="img/m-insta-svg@2x.png 2x, img/m-insta-svg@3x.png 3x"
-            alt="Логотип Инстаграм"
-            class="socials__insta-icon">
-        </a>
-        <a class="socials__item socials__item--facebook"
-            href="https://www.facebook.com/htmlacademy"
-            target="blank">
-            <img
-            width="10px"
-            height="19px"
-            src="img/m-fb-svg.png"
-            srcset="img/m-fb-svg@2x.png 2x, img/m-fb-svg@3x.png 3x"
-            alt="Логотип Фейсбук"
-            class="socials__fb-icon">
-        </a>
+              width="22px"
+              height="12px"
+              src="img/m-vk-svg.png"
+              srcset="img/m-vk-svg@2x.png 2x, img/m-vk-svg@3x.png 3x"
+              alt="Логотип Вконтакте"
+              class="socials__vk-icon">
+          </a>
+          <a class="socials__item socials__item--instagram"
+              href="https://www.instagram.com/htmlacademy/"
+              target="blank">
+              <img
+                width="17px"
+                height="17px"
+                src="img/m-insta-svg.png"
+                srcset="img/m-insta-svg@2x.png 2x, img/m-insta-svg@3x.png 3x"
+                alt="Логотип Инстаграм"
+                class="socials__insta-icon">
+          </a>
+          <a class="socials__item socials__item--facebook"
+              href="https://www.facebook.com/htmlacademy"
+              target="blank">
+              <img
+              width="10px"
+              height="19px"
+              src="img/m-fb-svg.png"
+              srcset="img/m-fb-svg@2x.png 2x, img/m-fb-svg@3x.png 3x"
+              alt="Логотип Фейсбук"
+              class="socials__fb-icon">
+          </a>
+        </div>
       </div>
       <div class="page-footer__copyright">
         <a
